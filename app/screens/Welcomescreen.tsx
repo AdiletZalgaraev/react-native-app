@@ -24,6 +24,11 @@ export default function WelcomeScreen({navigation}: any) {
             {()=>navigation.navigate('MiniList')}>
                 <Text style={styles.title}>Мой лист</Text>
             </TouchableOpacity>
+
+            <TouchableOpacity onPress=
+            {()=>navigation.navigate('UserList')}>
+                <Text style={styles.title}>Лист пользователей</Text>
+            </TouchableOpacity>
         </View>
     );
 }
