@@ -14,9 +14,15 @@ export default function WelcomeScreen({navigation}: any) {
             value = {name}
             onChangeText={setName}
             ></TextInput>
+
             <TouchableOpacity onPress=
             {()=>navigation.navigate('Profile',{name})}>
                 <Text style={styles.title}>Продолжить</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity onPress=
+            {()=>navigation.navigate('MiniList')}>
+                <Text style={styles.title}>Мой лист</Text>
             </TouchableOpacity>
         </View>
     );
