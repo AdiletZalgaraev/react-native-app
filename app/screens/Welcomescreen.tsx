@@ -29,6 +29,12 @@ export default function WelcomeScreen({navigation}: any) {
             {()=>navigation.navigate('UserList')}>
                 <Text style={styles.title}>Лист пользователей</Text>
             </TouchableOpacity>
+
+            <TouchableOpacity onPress=
+            {()=>navigation.navigate('Calculator')}>
+                <Text style={styles.title}>Калькулятор</Text>
+            </TouchableOpacity>
         </View>
+
     );
 }
